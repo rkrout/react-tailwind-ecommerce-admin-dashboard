@@ -1,0 +1,26 @@
+body {
+	font-family: "Poppins", sans-serif;
+	@apply bg-gray-200;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.striped:nth-child(even) {
+		@apply bg-gray-100;
+	}
+
+	.min-w-1024 {
+		min-width: 1024px;
+	}
+
+	.min-w-1280 {
+		min-width: 1280px;
+	}
+
+	.w-600 {
+		width: 600px;
+	}
+}
